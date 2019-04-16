@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>702</x>
+      <y>9</y>
+      <w>90</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>/Application/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>738</x>
+      <y>27</y>
+      <w>72</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+extends</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>621</x>
+      <y>81</y>
+      <w>243</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>+MainApp
+Package::application
+--
+-primaryStage: Stage  
+-rootLayout: BorderPane
+--
++start(primaryStage: Stage)
++addElements()
+_+main(args: String[])_
+--
+Responsibilities:
+-- creates GUI
+-- sets up GUI
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>621</x>
+      <y>342</y>
+      <w>252</w>
+      <h>351</h>
+    </coordinates>
+    <panel_attributes>+TextProController
+Package::application
+--
+_-DEFAULT_SPACING: double_
+_-CONTROL_HEIGHT: double_
+_-SPACE_DIV: double_
+_-BUTTON_WIDTH: double_
+_-RBOX_THRESHOLD: double_
+-mainApp: MainApp
+-launch: LaunchClass
+-leftPane: VBox 		
+-rightBox: VBox 		
+-container: HBox 		
+-fLabel: Label 		
+-bufferPane: Pane 		
+-fleschField: TextField 	
+-autocompleteBox: CheckBox 	
+-spellingBox: CheckBox
+--
++setMainApp(mainApp: MainApp)
+--
+Responsibilities:
+-- adds elements on the scene from XML
+--  </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>261</y>
+      <w>54</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.&gt;
+uses</panel_attributes>
+    <additional_attributes>10.0;90.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>621</x>
+      <y>747</y>
+      <w>207</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>+LaunchClass
+Package::application
+--
++Dict100kPath: String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>684</y>
+      <w>63</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;70.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1053</x>
+      <y>342</y>
+      <w>198</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>+&lt;&lt;Dictionary&gt;&gt;
+Package::dictionary
+--
+--
+/+addWord(word: String): boolean/
+/+isWord(s: String): boolean/
+/+size(): int/
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1053</x>
+      <y>513</y>
+      <w>198</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>+DictionaryBST
+Package::dictionary
+--
+-dict: TreeSet&lt;String&gt;
+--
++DictionaryBST()
++addWord(word: String): boolean
++isWord(s: String): boolean
++size(): int
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1143</x>
+      <y>432</y>
+      <w>90</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1305</x>
+      <y>513</y>
+      <w>198</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>+DictionaryBSTTester
+Package::dictionary
+--
+-Dict4kPath: String
+-emptyDict: DictionaryBST
+-smallDict: DictionaryBST
+-largeDict: DictionaryBST
+--
++initializeTestConditions()
++testAddWord()
++testIsWord()
++testSize()
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1242</x>
+      <y>567</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;20.0;70.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1287</x>
+      <y>342</y>
+      <w>387</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>+DictionaryLoader
+Package::dictionary
+--
+--
+_+loadDictionary(dict: Dictionary, pathToFile; String)_
+_+loadDictionary(dict: Dictionary, pathToFile; String, numWords: int)_
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1395</x>
+      <y>423</y>
+      <w>54</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1755</x>
+      <y>324</y>
+      <w>198</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>+DictionaryLoaderTester
+Package::dictionary
+--
+-Dict: DictionaryBST
+--
++TestWrongFile()
++TestEmptyFile()
++TestNumWordsInLineAndLeadingSpaces()
++TestFileWithEmptyLines()
++TestFileEnded()
++Test100WordsLoading()
++TestFullDictLoading()
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1665</x>
+      <y>369</y>
+      <w>108</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1143</x>
+      <y>459</y>
+      <w>720</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;300.0;780.0;300.0;780.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>288</y>
+      <w>612</w>
+      <h>486</h>
+    </coordinates>
+    <panel_attributes>+AutoSpellingTextArea
+Package::application
+--
+_-NUM_COMPLETIONS: int_
+_-NUM_SUGGESTIONS: int_
+-autoCompleteOn: boolean
+-spellingOn: boolean
+-needUpdate: boolean
+-matchCase: boolean
+-startIndex: int
+-endIndex: int
+-options: List&lt;String&gt;
+-entriesPopup: ContextMenu
+-autoComplite: spelling.AutoComplete
+-dict: dictionary.Dictionary 
+-spellingSuggestion: spelling.SpellingSuggest
+_/-mHit: Method/_
+_/-mGetCharacterIndex: Method/_
+_/-styledView: Object/_
+
+--
++AutoSpellingTextArea(ac: spelling.AutoComplete, ss: spelling.SpellingSuggest, dic: dictionary.Dictionary)
+-getWordAtIndex(pos: int): String
+-createOptions(options: List&lt;String&gt;, flags: boolean[] ): List&lt;CustomMenuItem&gt;
++checkSpelling(): StyleSpans&lt;Boolean&gt;
+-showSuggestions(word: String, click: MouseEvent)
+-showCompletions(prefix: String)
++setSpelling(state: boolean)
++setAutoComplete(state: boolean)
++getCaseFlags(word: String): boolean[]
+-convertCaseUsingFlags(word: String, flags: boolean[]): String
+_-invoke(m: Method, obj: Object, args: Object...): Object_
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>171</y>
+      <w>162</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>StyledTextArea&lt;Boolean&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>189</y>
+      <w>72</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+extends</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>387</y>
+      <w>657</w>
+      <h>513</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+uses</panel_attributes>
+    <additional_attributes>10.0;430.0;10.0;550.0;580.0;550.0;580.0;10.0;710.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>891</y>
+      <w>414</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>+&lt;&lt;AutoComplete&gt;&gt;
+Package::dictionary
+--
+--
+/+predictCompletions(prefix: String, numCompletions: int): List&lt;String&gt;/
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>351</x>
+      <y>765</y>
+      <w>675</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+uses</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0;730.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>1080</y>
+      <w>414</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>+&lt;&lt;SpellingSuggest&gt;&gt;
+Package::dictionary
+--
+--
+/+suggestions(word: String, numSuggestions: int): List&lt;String&gt;/
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>765</y>
+      <w>702</w>
+      <h>378</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+uses</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;400.0;760.0;400.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1053</x>
+      <y>99</y>
+      <w>225</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>+DictionaryTrie
+Package::dictionary
+--
+-root: TrieNode
+-size: int
+--
++DictionaryTrie()
++addWord(word: String): boolean
++isWord(s: String): boolean
+-TrieByWord(word: String): TrieNode
++size(): int
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1350</x>
+      <y>99</y>
+      <w>198</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>+DictionaryTrieTester
+Package::dictionary
+--
+-Dict4kPath: String
+-emptyDict: DictionaryBST
+-smallDict: DictionaryBST
+-largeDict: DictionaryBST
+--
++initializeTestConditions()
++testAddWord()
++testIsWord()
++testSize()
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1143</x>
+      <y>234</y>
+      <w>90</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1269</x>
+      <y>153</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1386</x>
+      <y>234</y>
+      <w>54</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1161</x>
+      <y>27</y>
+      <w>720</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;20.0;780.0;20.0;780.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1593</x>
+      <y>99</y>
+      <w>252</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>+TrieNode
+Package::dictionary
+--
+-children: HashMap&lt;Character, TrieNode&gt;
+-text: String
+-isWord: boolean
+--
++TrieNode()
++TrieNode(text: String)
++getChild(c: Character): TrieNode
++insert(c: Character): TrieNode
++getText(): String
++setEndsWord(b: boolean)
++isEndsWord(): boolean
++getValidNextCharacters(): Set&lt;Character&gt;
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1233</x>
+      <y>45</y>
+      <w>423</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>450.0;60.0;450.0;20.0;10.0;20.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>234</y>
+      <w>243</w>
+      <h>675</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>250.0;730.0;250.0;660.0;10.0;660.0;10.0;60.0;150.0;60.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1530</x>
+      <y>1080</y>
+      <w>360</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>+NearbyWords
+Package::spelling
+--
+-dict: Dictionary
+--
++distanceOne(s: String): List&lt;String&gt;
++substitution(s: String, currentList: List&lt;String&gt;)
++insertions(s: String, currentList: List&lt;String&gt;)
++deletions(s: String, currentList: List&lt;String&gt;)
++suggestions(word: String, numSuggestions: int): List&lt;String&gt;
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1413</x>
+      <y>1098</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1413</x>
+      <y>909</y>
+      <w>234</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;20.0;240.0;20.0;240.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1575</x>
+      <y>1296</y>
+      <w>225</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>+NearByWordsTester
+Package::spelling
+--
+-dict4kPath: String
+-dict: DictionaryTrie
+-nearByWords: NearbyWords
+-retList: List&lt;String&gt;
+--
++initializeTestConditions()
++TestSubstitution()
++TestInsertions()
++TestDeletions()
++TestDistanceOne()
++TestSuggestions()
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1683</x>
+      <y>1215</y>
+      <w>54</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1089</x>
+      <y>0</y>
+      <w>909</w>
+      <h>1422</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;20.0;990.0;20.0;990.0;1560.0;790.0;1560.0</additional_attributes>
+  </element>
+</diagram>
