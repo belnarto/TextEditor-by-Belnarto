@@ -29,11 +29,14 @@ public class NearbyWords implements SpellingSuggest {
 	 * @return list of Strings which are nearby the original string
 	 */
 	public List<String> distanceOne(String s)  {
-		   List<String> retList = new ArrayList<String>();
-		   substitution(s, retList);
-		   insertions(s, retList);
-		   deletions(s, retList);
-		   return retList;
+		if (s != null) {
+			s = s.replaceAll("\\W", "");
+		}
+		List<String> retList = new ArrayList<String>();
+		substitution(s, retList);
+		insertions(s, retList);
+		deletions(s, retList);
+		return retList;
 	}
 
 	
@@ -130,7 +133,7 @@ public class NearbyWords implements SpellingSuggest {
 		visited.add(word);
 					
 		//dictionary.Dictionary dict = new dictionary.DictionaryBST();
-		//dictionary.DictionaryLoader.loadDictionary(dict, "data/dict.txt");
+		//dictionary.DictionaryLoader.loadDictionary(dict, "/dictionaries/dict.txt");
 		NearbyWords nearByWords = new NearbyWords(dict);
 		
 		int size = retList.size();

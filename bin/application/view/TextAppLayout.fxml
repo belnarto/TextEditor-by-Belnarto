@@ -47,8 +47,8 @@
       <children>
         <Button font="$x1" mnemonicParsing="false" prefHeight="21.0" prefWidth="160.0" onAction="#handleLoadText" text="Load Text" />
         <Button font="$x1" mnemonicParsing="false" prefWidth="160.0" onAction="#handleFleschIndex" text="Flesch Index" />
-        <Button font="$x1" mnemonicParsing="false" prefHeight="21.0" prefWidth="160.0" text="Edit Distance" />
-        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Generate Markov Text">
+        <Button font="$x1" mnemonicParsing="false" prefHeight="21.0" prefWidth="160.0" onAction="#handleEditDistance" text="Edit Distance" />
+        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" onAction="#handleMarkovText" text="Generate Markov Text">
           <font>
             <Font size="13.5" />
           </font>

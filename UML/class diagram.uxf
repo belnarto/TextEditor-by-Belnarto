@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>9</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>702</x>
-      <y>9</y>
-      <w>90</w>
-      <h>27</h>
+      <x>944</x>
+      <y>72</y>
+      <w>80</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>/Application/
 </panel_attributes>
@@ -16,10 +16,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>738</x>
-      <y>27</y>
-      <w>72</w>
-      <h>72</h>
+      <x>976</x>
+      <y>88</y>
+      <w>64</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 extends</panel_attributes>
@@ -28,10 +28,10 @@ extends</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>621</x>
-      <y>81</y>
-      <w>243</w>
-      <h>189</h>
+      <x>872</x>
+      <y>136</y>
+      <w>216</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>+MainApp
 Package::application
@@ -52,10 +52,10 @@ Responsibilities:
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>621</x>
-      <y>342</y>
-      <w>252</w>
-      <h>351</h>
+      <x>872</x>
+      <y>368</y>
+      <w>224</w>
+      <h>312</h>
     </coordinates>
     <panel_attributes>+TextProController
 Package::application
@@ -86,10 +86,10 @@ Responsibilities:
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>261</y>
-      <w>54</w>
-      <h>99</h>
+      <x>960</x>
+      <y>296</y>
+      <w>48</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;.&gt;
 uses</panel_attributes>
@@ -98,10 +98,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>621</x>
-      <y>747</y>
-      <w>207</w>
-      <h>72</h>
+      <x>872</x>
+      <y>728</y>
+      <w>184</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>+LaunchClass
 Package::application
@@ -114,10 +114,10 @@ Package::application
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>684</y>
-      <w>63</w>
-      <h>81</h>
+      <x>960</x>
+      <y>672</y>
+      <w>56</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -126,10 +126,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1053</x>
-      <y>342</y>
-      <w>198</w>
-      <h>99</h>
+      <x>1256</x>
+      <y>368</y>
+      <w>176</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>+&lt;&lt;Dictionary&gt;&gt;
 Package::dictionary
@@ -145,10 +145,10 @@ bg=cyan</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1053</x>
-      <y>513</y>
-      <w>198</w>
-      <h>144</h>
+      <x>1256</x>
+      <y>520</y>
+      <w>176</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>+DictionaryBST
 Package::dictionary
@@ -166,10 +166,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1143</x>
-      <y>432</y>
-      <w>90</w>
-      <h>99</h>
+      <x>1336</x>
+      <y>448</y>
+      <w>80</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 implements</panel_attributes>
@@ -178,10 +178,10 @@ implements</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1305</x>
-      <y>513</y>
-      <w>198</w>
-      <h>144</h>
+      <x>1480</x>
+      <y>520</y>
+      <w>176</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>+DictionaryBSTTester
 Package::dictionary
@@ -202,10 +202,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1242</x>
-      <y>567</y>
-      <w>81</w>
-      <h>36</h>
+      <x>1424</x>
+      <y>568</y>
+      <w>72</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -214,10 +214,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1287</x>
-      <y>342</y>
-      <w>387</w>
-      <h>90</h>
+      <x>1464</x>
+      <y>368</y>
+      <w>344</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>+DictionaryLoader
 Package::dictionary
@@ -232,10 +232,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1395</x>
-      <y>423</y>
-      <w>54</w>
-      <h>108</h>
+      <x>1560</x>
+      <y>440</y>
+      <w>48</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -244,10 +244,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1755</x>
-      <y>324</y>
-      <w>198</w>
-      <h>144</h>
+      <x>1880</x>
+      <y>352</y>
+      <w>176</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>+DictionaryLoaderTester
 Package::dictionary
@@ -268,10 +268,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1665</x>
-      <y>369</y>
-      <w>108</w>
-      <h>36</h>
+      <x>1800</x>
+      <y>392</y>
+      <w>96</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -280,10 +280,10 @@ uses</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1143</x>
-      <y>459</y>
-      <w>720</w>
-      <h>288</h>
+      <x>1336</x>
+      <y>472</y>
+      <w>640</w>
+      <h>256</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -292,10 +292,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>288</y>
-      <w>612</w>
-      <h>486</h>
+      <x>320</x>
+      <y>320</y>
+      <w>544</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>+AutoSpellingTextArea
 Package::application
@@ -336,10 +336,10 @@ _-invoke(m: Method, obj: Object, args: Object...): Object_
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
-      <y>171</y>
-      <w>162</w>
-      <h>27</h>
+      <x>640</x>
+      <y>216</y>
+      <w>144</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>StyledTextArea&lt;Boolean&gt;
 </panel_attributes>
@@ -348,10 +348,10 @@ _-invoke(m: Method, obj: Object, args: Object...): Object_
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>414</x>
-      <y>189</y>
-      <w>72</w>
-      <h>117</h>
+      <x>688</x>
+      <y>232</y>
+      <w>64</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-
 extends</panel_attributes>
@@ -360,10 +360,10 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>414</x>
-      <y>387</y>
-      <w>657</w>
-      <h>513</h>
+      <x>688</x>
+      <y>408</y>
+      <w>584</w>
+      <h>456</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 uses</panel_attributes>
@@ -372,10 +372,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>891</y>
-      <w>414</w>
-      <h>72</h>
+      <x>1216</x>
+      <y>856</y>
+      <w>368</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>+&lt;&lt;AutoComplete&gt;&gt;
 Package::dictionary
@@ -389,10 +389,10 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>351</x>
-      <y>765</y>
-      <w>675</w>
-      <h>189</h>
+      <x>632</x>
+      <y>744</y>
+      <w>600</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 uses</panel_attributes>
@@ -401,13 +401,13 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1008</x>
-      <y>1080</y>
-      <w>414</w>
-      <h>72</h>
+      <x>1216</x>
+      <y>1024</y>
+      <w>368</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>+&lt;&lt;SpellingSuggest&gt;&gt;
-Package::dictionary
+Package::spelling
 --
 --
 /+suggestions(word: String, numSuggestions: int): List&lt;String&gt;/
@@ -418,10 +418,10 @@ bg=cyan</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>324</x>
-      <y>765</y>
-      <w>702</w>
-      <h>378</h>
+      <x>608</x>
+      <y>744</y>
+      <w>624</w>
+      <h>336</h>
     </coordinates>
     <panel_attributes>lt=.&gt;
 uses</panel_attributes>
@@ -430,10 +430,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1053</x>
-      <y>99</y>
-      <w>225</w>
-      <h>144</h>
+      <x>1256</x>
+      <y>152</y>
+      <w>200</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>+DictionaryTrie
 Package::dictionary
@@ -453,10 +453,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1350</x>
-      <y>99</y>
-      <w>198</w>
-      <h>144</h>
+      <x>1520</x>
+      <y>152</y>
+      <w>176</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>+DictionaryTrieTester
 Package::dictionary
@@ -477,10 +477,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1143</x>
-      <y>234</y>
-      <w>90</w>
-      <h>126</h>
+      <x>1336</x>
+      <y>272</y>
+      <w>80</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 implements</panel_attributes>
@@ -489,10 +489,10 @@ implements</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1269</x>
-      <y>153</y>
-      <w>99</w>
-      <h>36</h>
+      <x>1448</x>
+      <y>200</y>
+      <w>88</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -501,10 +501,10 @@ uses</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1386</x>
-      <y>234</y>
-      <w>54</w>
-      <h>126</h>
+      <x>1552</x>
+      <y>272</y>
+      <w>48</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -513,10 +513,10 @@ uses</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1161</x>
-      <y>27</y>
-      <w>720</w>
-      <h>315</h>
+      <x>1352</x>
+      <y>88</y>
+      <w>640</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -525,10 +525,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1593</x>
-      <y>99</y>
-      <w>252</w>
-      <h>216</h>
+      <x>1736</x>
+      <y>152</y>
+      <w>224</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>+TrieNode
 Package::dictionary
@@ -552,10 +552,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1233</x>
-      <y>45</y>
-      <w>423</w>
-      <h>72</h>
+      <x>1416</x>
+      <y>104</y>
+      <w>376</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -564,10 +564,10 @@ uses</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>963</x>
-      <y>234</y>
-      <w>243</w>
-      <h>675</h>
+      <x>1176</x>
+      <y>272</y>
+      <w>216</w>
+      <h>600</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 implements</panel_attributes>
@@ -576,10 +576,10 @@ implements</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1530</x>
-      <y>1080</y>
-      <w>360</w>
-      <h>144</h>
+      <x>1680</x>
+      <y>1024</y>
+      <w>320</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>+NearbyWords
 Package::spelling
@@ -598,10 +598,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1413</x>
-      <y>1098</y>
-      <w>126</w>
-      <h>36</h>
+      <x>1576</x>
+      <y>1040</y>
+      <w>112</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.
 implements</panel_attributes>
@@ -610,10 +610,10 @@ implements</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1413</x>
-      <y>909</y>
-      <w>234</w>
-      <h>189</h>
+      <x>1576</x>
+      <y>872</y>
+      <w>208</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -622,10 +622,10 @@ uses</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1575</x>
-      <y>1296</y>
-      <w>225</w>
-      <h>198</h>
+      <x>1720</x>
+      <y>1216</y>
+      <w>200</w>
+      <h>176</h>
     </coordinates>
     <panel_attributes>+NearByWordsTester
 Package::spelling
@@ -648,10 +648,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1683</x>
-      <y>1215</y>
-      <w>54</w>
-      <h>99</h>
+      <x>1816</x>
+      <y>1144</y>
+      <w>48</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
@@ -660,13 +660,139 @@ uses</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1089</x>
-      <y>0</y>
-      <w>909</w>
-      <h>1422</h>
+      <x>1288</x>
+      <y>64</y>
+      <w>808</w>
+      <h>1264</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 uses</panel_attributes>
     <additional_attributes>10.0;110.0;10.0;20.0;990.0;20.0;990.0;1560.0;790.0;1560.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>312</x>
+      <y>872</y>
+      <w>224</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>+Document
+Package::application
+--
+-text: String
+-numWords: int
+-numSentences: int
+-numSyllables: int
+--
++Document(text: String)
+-getTokens(pattern: String): List&lt;String&gt;
+-countSyllables(word: String): int
+-isWord(tok: String): boolean
+-processText()
+-getNumSentences(): int
+-getNumWords(): int
+-getNumSyllables(): int
++getText(): String
++getFleschScore(): double
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>920</y>
+      <w>224</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>+DocumentTester
+Package::application
+--
+-doc: Document
+--
++testConstructor()
++testGetFleschScore()
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>944</y>
+      <w>112</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1048</x>
+      <y>384</y>
+      <w>224</w>
+      <h>384</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>260.0;10.0;90.0;10.0;90.0;460.0;10.0;460.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1048</x>
+      <y>760</y>
+      <w>320</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>380.0;120.0;380.0;80.0;90.0;80.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>784</y>
+      <w>368</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>440.0;300.0;440.0;230.0;10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>784</y>
+      <w>496</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+uses</panel_attributes>
+    <additional_attributes>10.0;110.0;20.0;40.0;600.0;40.0;600.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1208</x>
+      <y>1136</y>
+      <w>368</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>+&lt;&lt;WordPath&gt;&gt;
+Package::spelling
+--
+--
+/+findPath(word1: String, word2: String): List&lt;String&gt;/
+
+bg=cyan</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

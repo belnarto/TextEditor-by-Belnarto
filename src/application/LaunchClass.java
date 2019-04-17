@@ -9,12 +9,12 @@ import spelling.*;
 public class LaunchClass {
 	
 	
-	public String Dict100kPath = "data/Dict100k.txt";
+	public String Dict100kPath = "/dictionaries/Dict100k.txt";
 	
 	public Document getDocument(String text) {
 		return new Document(text);
 	}
-	/*	
+	
 	public textgen.MarkovTextGenerator getMTG() {
 		return new textgen.MarkovTextGeneratorLoL(new Random());
 	}
@@ -22,7 +22,7 @@ public class LaunchClass {
 	public spelling.WordPath getWordPath() {
 		return new spelling.WPTree();
 	}
-	*/
+
 	
     public AutoComplete getAutoComplete() {
     	Dictionary dict = new DictionaryTrie();

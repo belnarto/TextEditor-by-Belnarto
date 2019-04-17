@@ -4,8 +4,9 @@
 package dictionary;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class DictionaryLoader {
 
@@ -18,9 +19,13 @@ public class DictionaryLoader {
     {
 
         BufferedReader reader = null;
+        if (pathToFile.equals("")) {
+        	return;
+        }
         try {
             String nextWord;
-            reader = new BufferedReader(new FileReader(pathToFile));
+        	InputStream in = DictionaryTrieTester.class.getResourceAsStream(pathToFile); 
+            reader = new BufferedReader(new InputStreamReader(in));
             while ((nextWord = reader.readLine()) != null) {
             	nextWord = nextWord.replaceAll("^\\s+", "");
             	if (!nextWord.isEmpty()) {
@@ -45,9 +50,13 @@ public class DictionaryLoader {
     {
 
         BufferedReader reader = null;
+        if (pathToFile.equals("")) {
+        	return;
+        }
         try {
             String nextWord;
-            reader = new BufferedReader(new FileReader(pathToFile));
+        	InputStream in = DictionaryTrieTester.class.getResourceAsStream(pathToFile); 
+            reader = new BufferedReader(new InputStreamReader(in));
             int numLoaded = 0;
             while ((nextWord = reader.readLine()) != null && numLoaded < numWords) {
             	nextWord.replaceAll("^\\s+", "");

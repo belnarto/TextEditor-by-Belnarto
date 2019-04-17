@@ -17,7 +17,7 @@ import org.junit.Test;
 public class DictionaryTrieTester {
 
 	// if change file or number of words also change number in testcases
-	private String Dict4kPath = "data/Dict4k.txt"; 
+	private String Dict4kPath = "/dictionaries/Dict4k.txt"; 
 
 	private DictionaryTrie emptyDict; 
 	private DictionaryTrie smallDict;

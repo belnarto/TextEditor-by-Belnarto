@@ -174,14 +174,13 @@ public class TextProController {
 	private void handleLoadText() {
 		mainApp.showLoadFileDialog(textBox);
 	}
-	/*
+	
 	@FXML
 	private void handleEditDistance() {
 		String selectedText = textBox.getSelectedText();
-		mainApp.showEditDistanceDialog(selectedText);
-		
+		mainApp.showEditDistanceDialog(selectedText);	
 	}
-	
+
 	@FXML
 	private void handleMarkovText() {
 		// get MTG object
@@ -191,7 +190,6 @@ public class TextProController {
 	        @Override
 	        public textgen.MarkovTextGenerator call() {
 	            // process long-running computation, data retrieval, etc...
-
 	            mtg.retrain(textBox.getText());
 	            return mtg;
 	        }
@@ -207,7 +205,6 @@ public class TextProController {
 			}
 		});
 
-		
 		// show loading dialog when task is running
 		task.setOnRunning( e -> {
 			mainApp.showLoadStage(loadStage, "Training MTG...");
@@ -224,8 +221,6 @@ public class TextProController {
 	   thread.start();
 	  
 	}
-	
-		*/
 	
 	@FXML
 	private void handleAutoComplete() {

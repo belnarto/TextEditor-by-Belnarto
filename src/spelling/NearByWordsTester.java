@@ -22,7 +22,7 @@ import dictionary.DictionaryTrie;
 public class NearByWordsTester {
 
 	// if change file or number of words also change number in testcases
-	private String dict4kPath = "data/Dict4k.txt"; 
+	private String dict4kPath = "/dictionaries/Dict4k.txt"; 
 	private DictionaryTrie dict = new DictionaryTrie(); 
 	private NearbyWords nearByWords = new NearbyWords(dict);
 	private List<String> retList;
