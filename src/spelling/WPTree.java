@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package spelling;
 
@@ -12,75 +12,74 @@ import dictionary.*;
 /**
  * WPTree implements WordPath by dynamically creating a tree of words during a Breadth First
  * Search of Nearby words to create a path between two words. 
- * 
+ *
  * @author UC San Diego Intermediate MOOC team
  * @author Belnarto
  *
  */
 public class WPTree implements WordPath {
 
-	// this is the root node of the WPTree
-	private WPTreeNode root;
-	// used to search for nearby Words
-	private NearbyWords nearByWords; 
-	
-	// This constructor is used by the Text Editor Application
-	// You'll need to create your own NearbyWords object here.
-	public WPTree () {
-		this.root = null;
-		Dictionary dict = new DictionaryTrie();
-		DictionaryLoader.loadDictionary(dict, "/dictionaries/Dict100k.txt");
-		this.nearByWords = new NearbyWords(dict);
-	}
-	
-	public WPTree (NearbyWords nw) {
-		this.root = null;
-		this.nearByWords = nw;
-	}
-	
-	// see method description in WordPath interface
-	public List<String> findPath(String word1, String word2) 
-	{
-		List<WPTreeNode> queue = new LinkedList<WPTreeNode>();
-		HashSet<String> visited = new HashSet<String>();
-		List<String> result = null;
-		WPTreeNode bufferPrevNode;
-		List<String> bufferList;
-		
-		root = new WPTreeNode(word1, null);
-		visited.add(word1);
-		queue.add(root);
-		
-		while (!queue.isEmpty() && result == null) {
-			bufferPrevNode = queue.remove(0);
-			bufferList = nearByWords.distanceOne(bufferPrevNode.getWord());
-			for (String word : bufferList) {
-				if (!visited.contains(word)) {
-					WPTreeNode bufferTreeNode = new WPTreeNode(word,bufferPrevNode);
-					bufferPrevNode.addChild(word);
-					visited.add(word);
-					queue.add(bufferTreeNode);
-					if (word.equals(word2)) {
-						return bufferTreeNode.buildPathToRoot();
-					}
-				}	
-			}
-		}
-		return null;
-	}
-	
-	// Method to print a list of WPTreeNodes 
-	@SuppressWarnings("unused")
-	private String printQueue(List<WPTreeNode> list) {
-		String ret = "[ ";
-		
-		for (WPTreeNode w : list) {
-			ret+= w.getWord()+", ";
-		}
-		ret+= "]";
-		return ret;
-	}
-	
+    // this is the root node of the WPTree
+    private WPTreeNode root;
+    // used to search for nearby Words
+    private NearbyWords nearByWords;
+
+    // This constructor is used by the Text Editor Application
+    // You'll need to create your own NearbyWords object here.
+    public WPTree() {
+        this.root = null;
+        Dictionary dict = new DictionaryTrie();
+        DictionaryLoader.loadDictionary(dict, "/dictionaries/Dict100k.txt");
+        this.nearByWords = new NearbyWords(dict);
+    }
+
+    public WPTree(NearbyWords nw) {
+        this.root = null;
+        this.nearByWords = nw;
+    }
+
+    // see method description in WordPath interface
+    public List<String> findPath(String word1, String word2) {
+        List<WPTreeNode> queue = new LinkedList<WPTreeNode>();
+        HashSet<String> visited = new HashSet<String>();
+        List<String> result = null;
+        WPTreeNode bufferPrevNode;
+        List<String> bufferList;
+
+        root = new WPTreeNode(word1, null);
+        visited.add(word1);
+        queue.add(root);
+
+        while (!queue.isEmpty() && result == null) {
+            bufferPrevNode = queue.remove(0);
+            bufferList = nearByWords.distanceOne(bufferPrevNode.getWord());
+            for (String word : bufferList) {
+                if (!visited.contains(word)) {
+                    WPTreeNode bufferTreeNode = new WPTreeNode(word, bufferPrevNode);
+                    bufferPrevNode.addChild(word);
+                    visited.add(word);
+                    queue.add(bufferTreeNode);
+                    if (word.equals(word2)) {
+                        return bufferTreeNode.buildPathToRoot();
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    // Method to print a list of WPTreeNodes
+    @SuppressWarnings("unused")
+    private String printQueue(List<WPTreeNode> list) {
+        String ret = "[ ";
+
+        for (WPTreeNode w : list) {
+            ret += w.getWord() + ", ";
+        }
+        ret += "]";
+        return ret;
+    }
+
 }
 
 /* Tree Node in a WordPath Tree. This is a standard tree with each
@@ -88,83 +87,82 @@ public class WPTree implements WordPath {
  * contain a word in the dictionary and the relationship between nodes is
  * that a child is one character mutation (deletion, insertion, or
  * substitution) away from its parent
-*/
+ */
 class WPTreeNode {
-    
+
     private String word;
     private List<WPTreeNode> children;
     private WPTreeNode parent;
-    
+
     /** Construct a node with the word w and the parent p
      *  (pass a null parent to construct the root)  
-	 * @param w The new node's word
-	 * @param p The new node's parent
-	 */
+     * @param w The new node's word
+     * @param p The new node's parent
+     */
     public WPTreeNode(String w, WPTreeNode p) {
         this.word = w;
         this.parent = p;
         this.children = new LinkedList<WPTreeNode>();
     }
-    
+
     /** Add a child of a node containing the String s
      *  precondition: The word is not already a child of this node
      * @param s The child node's word
-	 * @return The new WPTreeNode
-	 */
-    public WPTreeNode addChild(String s){
+     * @return The new WPTreeNode
+     */
+    public WPTreeNode addChild(String s) {
         WPTreeNode child = new WPTreeNode(s, this);
         this.children.add(child);
         return child;
     }
-    
+
     /** Get the list of children of the calling object
      *  (pass a null parent to construct the root)  
-	 * @return List of WPTreeNode children
-	 */
+     * @return List of WPTreeNode children
+     */
     public List<WPTreeNode> getChildren() {
         return this.children;
     }
-   
+
     /** Allows you to build a path from the root node to 
      *  the calling object
      * @return The list of strings starting at the root and 
      *         ending at the calling object
-	 */
+     */
     public List<String> buildPathToRoot() {
         WPTreeNode curr = this;
         List<String> path = new LinkedList<String>();
-        while(curr != null) {
-            path.add(0,curr.getWord());
-            curr = curr.parent; 
+        while (curr != null) {
+            path.add(0, curr.getWord());
+            curr = curr.parent;
         }
         return path;
     }
-    
+
     /** Get the word for the calling object
      *
-	 * @return Getter for calling object's word
-	 */
+     * @return Getter for calling object's word
+     */
     public String getWord() {
         return this.word;
     }
-    
+
     /** toString method
-    *
-	 * @return The string representation of a WPTreeNode
-	 */
+     *
+     * @return The string representation of a WPTreeNode
+     */
     public String toString() {
-        String ret = "Word: "+word+", parent = ";
-        if(this.parent == null) {
-           ret+="null.\n";
+        String ret = "Word: " + word + ", parent = ";
+        if (this.parent == null) {
+            ret += "null.\n";
+        } else {
+            ret += this.parent.getWord() + "\n";
         }
-        else {
-           ret += this.parent.getWord()+"\n";
+        ret += "[ ";
+        for (WPTreeNode curr : children) {
+            ret += curr.getWord() + ", ";
         }
-        ret+="[ ";
-        for(WPTreeNode curr: children) {
-            ret+=curr.getWord() + ", ";
-        }
-        ret+=(" ]\n");
+        ret += (" ]\n");
         return ret;
     }
 
